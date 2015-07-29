@@ -1,13 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center"
-    android:orientation="vertical" >
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello" />
+	<EditText
+		android:layout_height="match_parent"
+		android:inputType="textMultiLine"
+		android:layout_width="match_parent"
+		android:ems="10"
+		android:layout_weight="1.0"
+		android:id="@+id/result"/>
+
+	<LinearLayout
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:orientation="horizontal">
+
+		<EditText
+			android:layout_height="match_parent"
+			android:layout_width="match_parent"
+			android:ems="10"
+			android:layout_weight="1.0"
+			android:id="@+id/length"
+			android:inputType="number"/>
+
+		<Button
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:text="@string/generate"
+			android:id="@+id/start"/>
+
+	</LinearLayout>
 
 </LinearLayout>
+
