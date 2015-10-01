@@ -48,6 +48,7 @@ public class MainActivity extends Activity
 					}
 				}
 				result.setText(arr,0,arr.length);
+				start.setOnClickListener(this);
 			}
 		});
     }
