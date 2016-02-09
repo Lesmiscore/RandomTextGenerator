@@ -40,13 +40,7 @@ public class MainActivity extends Activity
 				} catch (IOException e) {
 					e.printStackTrace();
 				}finally{
-					try {
-						if (br != null) {
-							br.close();
-						}
-					} catch (IOException e) {
-						
-					}
+					
 				}
 				result.setText(arr,0,arr.length);
 				((ClipboardManager)getSystemService(CLIPBOARD_SERVICE)).setText(result.getText());
