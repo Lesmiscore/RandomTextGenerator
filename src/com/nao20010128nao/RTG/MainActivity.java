@@ -5,6 +5,7 @@ import android.os.*;
 import android.view.*;
 import android.widget.*;
 import java.io.*;
+import android.text.*;
 
 public class MainActivity extends Activity
 {
@@ -48,6 +49,7 @@ public class MainActivity extends Activity
 					}
 				}
 				result.setText(arr,0,arr.length);
+				((ClipboardManager)getSystemService(CLIPBOARD_SERVICE)).setText(result.getText());
 				start.setOnClickListener(this);
 			}
 		});
